@@ -3,12 +3,14 @@ const graphql = require('graphql');
 const {GraphQLObjectType,
     GraphQLString,
     GraphQLList,
-    GraphQLNonNull
+    GraphQLNonNull,
+    GraphQLID
 }= graphql;
 
 const ItemType = new GraphQLObjectType({
     name: 'Item',
     fields: ()=>({
+        id: {type: GraphQLID},
         item: {type: GraphQLString}
     })
 });
@@ -53,13 +55,18 @@ const Mutation = new GraphQLObjectType({
         deleteItem: {
             type: ItemType,
             args: {
-                item: {type: new GraphQLNonNull(GraphQLString)}
+                id: {type: new GraphQLNonNull(GraphQLID)}
             },
             resolve(parent,args){
                 let item = new Item({
-                    item : args.item
+                    id : args.id
                 });
                 //Mongoose function provided to the model
+                //console.log(item);
+                return Item.findByIdAndDelete(args.id,function(err){
+                    if(err)console.log(err);
+                    console.log('Success');
+                });
             }
         }
     }

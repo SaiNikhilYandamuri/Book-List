@@ -3,6 +3,7 @@ import {gql} from 'apollo-boost';
 const getItemsQuery = gql`
     {
         items{
+            id
             item
         }
     }
@@ -16,4 +17,12 @@ const addItemMutation = gql`
     }
 `
 
-export {getItemsQuery,addItemMutation};
+const deleteItemMutation = gql`
+    mutation($id: ID!){
+        deleteItem(id: $id){
+            item
+        }
+    }
+`
+
+export {getItemsQuery,addItemMutation,deleteItemMutation};
