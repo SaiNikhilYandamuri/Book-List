@@ -1,5 +1,5 @@
 body{
-  background: #eee;
+  background: rgb(252, 252, 252);
   font-family: 'Nunito SemiBold';
 }
 
@@ -33,7 +33,7 @@ body{
 }
 
 form{
-  background: #fff;
+  background: #8957ff;
   display: block;
   margin: 12px;
   padding: 10px;
