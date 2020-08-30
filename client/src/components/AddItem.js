@@ -24,7 +24,7 @@ class AddItem extends Component{
         return(
             <form id="add-item" onSubmit={this.submitForm.bind(this)}>
                 <div className="field">
-                    <label>Task Name</label>
+                    <label>Book Name</label>
                     <input type="text" onChange={e => this.setState({item: e.target.value})}/>
                 </div>
                 <button>+</button>

@@ -13,7 +13,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div id="main">
-        <h1>To Do List</h1>
+        <h1>Nikhil's Book List</h1>
         <AddItem/>
         <ItemList/>
       </div>

@@ -1,10 +1,10 @@
 body{
-  background: #eee;
-  font-family: 'Nunito SemiBold';
+  background: rgb(255, 255, 255);
+  font-family: 'Helvetica';
 }
 
 #main h1{
-  color: rgb(56, 56, 56);
+  color: rgb(56, 52, 52);
   text-align: center;
 }
 
@@ -61,6 +61,7 @@ form input, form select{
   box-sizing: border-box;
   align-content: center;
   display: block;
+  border-radius: 4px;
 }
 
 form button{
@@ -73,6 +74,6 @@ form button{
   cursor: pointer;
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 80px;
 }
 
