@@ -13,13 +13,17 @@ This project consists of server side and client side code.
 
      #### `git clone https://github.com/SaiNikhilYandamuri/Book-List.git`
      
-* Change the directory to Book-List/server and run the following command:
+* Change the directory to Book-List/server and run the following commands:
+
+     #### `npm install`
 
      #### `node app`
      
      In a web browser, Open [http://localhost:4000/graphql](http://localhost:4000/graphql).
 
-* Change the directory to Book-List/client and run the following command:
+* Change the directory to Book-List/client and run the following commands:
+
+     #### `npm install`
 
      #### `npm run start`
      
