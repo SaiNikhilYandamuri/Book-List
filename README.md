@@ -31,4 +31,4 @@ This project consists of server side and client side code.
 
 ## Demo:
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/AAdekjkjx30)
+[![Watch the video](https://github.com/SaiNikhilYandamuri/Book-List/blob/master/client/public/Thumbnail.PNG)](https://youtu.be/AAdekjkjx30)
