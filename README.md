@@ -28,3 +28,7 @@ This project consists of server side and client side code.
      #### `npm run start`
      
      In a web browser, Open [http://localhost:3000](http://localhost:3000).
+
+## Demo:
+
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/AAdekjkjx30)
